@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://127.0.0.1:5500/Project%203%20imagge%20Search/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,400&display=swap');
+       *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+       }
+       body{
+        line-height: 1 6;
+       }
+
+       h1{
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin: 40px 0px 60px 0px;
+       }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+      #search-input{
+        width: 80px;
+        max-width: 400px;
+        padding: 9px 130px;
+        border: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0,0.2);
+        border-radius: 7px;
+        font-size: 18px;
+        color: #333;
+      }
+      #search-button{
+        padding: 10px 20px;
+        background-color: #138065;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0 0 6px rgba(0, 0, 0,0.2);
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+      .search-results{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1350px;
+        margin: 0 auto;
+      }
+      .search-result{
+        margin-bottom: 60px;
+        width: 30%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0, 0, 0,0.2);
+        overflow: hidden;
+        
+      }
+      .search-result img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.2s ease-in-out;
+      } 
+      .search-result:hover img{
+        opacity: 0.8;
+      }
+      .search-result a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+        text-transform: capitalize;
+      }
+      #show-more-button{
+        background-color: #008cba;
+        font-size: 18px;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; 
+      }
+      @media screen and (max-width:786px) {
+        .search-results{
+            padding: 20px;
+        }
+        .search-result {
+            width: 45%;
+        }
+        
+      }
+      @media screen and (max-width:480px) {
+        .search-result {
+            width: 100%;
+        }
+        
+      }
+       </style>
+     
+</head>
+
+<body>
+     
+    <h1>Image search application</h1>
+    <form action="http://127.0.0.1:5500/Project%203%20imagge%20Search/index.html?">
+        <input type="text" id="search-input" placeholder="Search for image ">
+        <button id="search-button">search</button>
+    </form>
+
+    <div class="search-results">
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1706621927383-c212d9477535?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sea under the boat">
+                <a href="https://unsplash.com/photos/a-sailboat-sailing-across-a-large-body-of-water-tAogkmOcSWM" target="_blank">Sea under the boat</a>
+                
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1706621927383-c212d9477535?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sea under the boat">
+                <a href="https://unsplash.com/photos/a-sailboat-sailing-across-a-large-body-of-water-tAogkmOcSWM" target="_blank">Sea under the boat</a>
+                
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1706621927383-c212d9477535?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sea under the boat">
+                <a href="https://unsplash.com/photos/a-sailboat-sailing-across-a-large-body-of-water-tAogkmOcSWM" target="_blank">Sea under the boat</a>
+                
+        </div>
+    </div>
+    <button id="show-more-button">Show more</button>
+    <script src="./Image Search Application_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+ </body></html>
